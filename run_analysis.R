@@ -36,7 +36,7 @@ names(output) <-gsub("\\(","",names(output))
 names(output) <-gsub("\\)","",names(output))
 
 #write out to file
-write.table(output, file="MyTidy.csv", row.names = FALSE, col.names = TRUE, sep = ",")
+write.table(output, file="MyTidy.txt", row.names = FALSE, col.names = TRUE, sep = ",")
 
 #output <- head(testandtrain)
 #print(output)
