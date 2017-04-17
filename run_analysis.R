@@ -1,12 +1,12 @@
 #Read in all of the data
-stest <- read.table("./UCI_HAR_Dataset/test/subject_test.txt")
-xtest <- read.table("./UCI_HAR_Dataset/test/X_test.txt")
-ytest <- read.table("./UCI_HAR_Dataset/test/Y_test.txt")
-strain <- read.table("./UCI_HAR_Dataset/train/subject_train.txt")
-xtrain <- read.table("./UCI_HAR_Dataset/train/X_train.txt")
-ytrain <- read.table("./UCI_HAR_Dataset/train/Y_train.txt")
-features <- read.table("./UCI_HAR_Dataset/features.txt")
-activity <- read.table(".//UCI_HAR_Dataset/activity_labels.txt")
+stest <- read.table("./subject_test.txt")
+xtest <- read.table("./X_test.txt")
+ytest <- read.table("./Y_test.txt")
+strain <- read.table("./subject_train.txt")
+xtrain <- read.table("./X_train.txt")
+ytrain <- read.table("./Y_train.txt")
+features <- read.table("./features.txt")
+activity <- read.table("./activity_labels.txt")
 
 #combine test and training data
 testdata <- cbind(stest, ytest, xtest)
